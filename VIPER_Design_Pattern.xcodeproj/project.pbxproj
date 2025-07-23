@@ -29,20 +29,42 @@
 		83AC26332E30984E00A9D88A /* VIPER_Design_PatternUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VIPER_Design_PatternUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		83AC26912E309D3600A9D88A /* Exceptions for "VIPER_Design_Pattern" folder in "VIPER_Design_Pattern" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Tests/VIPER_Design_PatternTests/VIPER_Design_PatternTests.swift,
+				Tests/VIPER_Design_PatternUITests/VIPER_Design_PatternUITests.swift,
+				Tests/VIPER_Design_PatternUITests/VIPER_Design_PatternUITestsLaunchTests.swift,
+			);
+			target = 83AC26182E30984C00A9D88A /* VIPER_Design_Pattern */;
+		};
+		83AC26922E309D3600A9D88A /* Exceptions for "VIPER_Design_Pattern" folder in "VIPER_Design_PatternTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Tests/VIPER_Design_PatternTests/VIPER_Design_PatternTests.swift,
+			);
+			target = 83AC26282E30984E00A9D88A /* VIPER_Design_PatternTests */;
+		};
+		83AC26932E309D3600A9D88A /* Exceptions for "VIPER_Design_Pattern" folder in "VIPER_Design_PatternUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Tests/VIPER_Design_PatternUITests/VIPER_Design_PatternUITests.swift,
+				Tests/VIPER_Design_PatternUITests/VIPER_Design_PatternUITestsLaunchTests.swift,
+			);
+			target = 83AC26322E30984E00A9D88A /* VIPER_Design_PatternUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		83AC261B2E30984C00A9D88A /* VIPER_Design_Pattern */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				83AC26912E309D3600A9D88A /* Exceptions for "VIPER_Design_Pattern" folder in "VIPER_Design_Pattern" target */,
+				83AC26922E309D3600A9D88A /* Exceptions for "VIPER_Design_Pattern" folder in "VIPER_Design_PatternTests" target */,
+				83AC26932E309D3600A9D88A /* Exceptions for "VIPER_Design_Pattern" folder in "VIPER_Design_PatternUITests" target */,
+			);
 			path = VIPER_Design_Pattern;
-			sourceTree = "<group>";
-		};
-		83AC262C2E30984E00A9D88A /* VIPER_Design_PatternTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = VIPER_Design_PatternTests;
-			sourceTree = "<group>";
-		};
-		83AC26362E30984E00A9D88A /* VIPER_Design_PatternUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = VIPER_Design_PatternUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -76,8 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				83AC261B2E30984C00A9D88A /* VIPER_Design_Pattern */,
-				83AC262C2E30984E00A9D88A /* VIPER_Design_PatternTests */,
-				83AC26362E30984E00A9D88A /* VIPER_Design_PatternUITests */,
 				83AC261A2E30984C00A9D88A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -130,9 +150,6 @@
 			dependencies = (
 				83AC262B2E30984E00A9D88A /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				83AC262C2E30984E00A9D88A /* VIPER_Design_PatternTests */,
-			);
 			name = VIPER_Design_PatternTests;
 			packageProductDependencies = (
 			);
@@ -152,9 +169,6 @@
 			);
 			dependencies = (
 				83AC26352E30984E00A9D88A /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				83AC26362E30984E00A9D88A /* VIPER_Design_PatternUITests */,
 			);
 			name = VIPER_Design_PatternUITests;
 			packageProductDependencies = (
@@ -412,7 +426,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "kh.com.kosign.viper.VIPER-Design-Pattern";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -441,7 +455,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "kh.com.kosign.viper.VIPER-Design-Pattern";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
