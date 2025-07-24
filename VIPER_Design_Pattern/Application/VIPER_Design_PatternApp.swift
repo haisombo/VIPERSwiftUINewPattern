@@ -25,6 +25,8 @@ struct VIPERSwiftUIApp: App {
                             ProfileModuleBuilder.build(userId: userId, appRouter: appRouter)
                         case .settings:
                             SettingsModuleBuilder.build(appRouter: appRouter)
+                        case .detailProduct(let Id) :
+                            DetailProModuleBuilder.build(appRouter: appRouter)
                         }
                     }
             }

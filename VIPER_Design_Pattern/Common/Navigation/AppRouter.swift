@@ -12,6 +12,8 @@ enum AppRoute: Hashable, Sendable {
     case home
     case profile(userId: String)
     case settings
+    case detailProduct(proId : String )
+    
 }
 
 @MainActor

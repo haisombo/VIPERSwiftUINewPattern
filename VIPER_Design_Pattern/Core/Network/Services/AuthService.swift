@@ -40,7 +40,7 @@ actor AuthService: AuthServiceProtocol {
             currentUser = user
             return user
         } else {
-            throw NetworkError.serverError("Invalid email or password")
+            throw NetworkError.serverError(0000)
         }
     }
     

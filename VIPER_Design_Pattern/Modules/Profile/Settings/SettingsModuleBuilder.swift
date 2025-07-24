@@ -20,3 +20,17 @@ enum SettingsModuleBuilder {
         return SettingsView(presenter: presenter)
     }
 }
+
+enum DetailProModuleBuilder {
+    @MainActor
+    static func build(appRouter: AppRouter) -> some View {
+        let interactor = SettingsInteractor()
+        let router = SettingsRouter(appRouter: appRouter)
+        let presenter = SettingsPresenter(
+            interactor: interactor,
+            router: router
+        )
+        
+        return SettingsView(presenter: presenter)
+    }
+}

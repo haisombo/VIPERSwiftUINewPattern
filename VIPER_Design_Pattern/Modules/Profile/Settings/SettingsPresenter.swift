@@ -8,7 +8,7 @@
 import Foundation
 
 @MainActor
-final class SettingsPresenter: SettingsPresenterProtocol {
+final class SettingsPresenter : SettingsPresenterProtocol {
     @Published var notificationsEnabled = false {
         didSet { saveSettings() }
     }
